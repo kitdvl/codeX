@@ -20,14 +20,6 @@ enum
 };
 
 
-typedef struct
-{
-	uint8_t args[CM_MAX][2048];
-	uint8_t mode;
-	void* (*f[2])(void*);
-	void* o;
-}ServiceArgs;
-
 
 #if defined __cplusplus
 extern "C"
@@ -37,13 +29,12 @@ __declspec(dllexport)
 #endif
 void __nmain(int32_t argc, int8_t** argv, void* (*f0)(void*), void* (*f1)(void*), void* o);
 
-
 #if defined __cplusplus
 extern "C"
 #endif
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-void argsParsing(int32_t argc, int8_t** argv, ServiceArgs* sa);
+void readArgs(int32_t argc, int8_t** argv, int8_t* key, int8_t* value);
 
 #endif
