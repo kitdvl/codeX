@@ -197,7 +197,7 @@ extern "C"
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-int32_t __socket_open(void** h, int8_t* argv, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
+int32_t __socket_open(void** h, int8_t* argv, uint8_t** b, int32_t sz, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
 
 #if defined __cplusplus
 extern "C"
@@ -269,7 +269,7 @@ extern "C"
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-int32_t __http_open(void** h, int8_t* argv, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
+int32_t __http_open(void** h, int8_t* argv, uint8_t** b, int32_t sz, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
 
 #if defined __cplusplus
 extern "C"
@@ -341,7 +341,7 @@ extern "C"
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-int32_t __httpd_open(void** h, int8_t* argv, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
+int32_t __httpd_open(void** h, int8_t* argv, uint8_t** b, int32_t sz, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
 
 #if defined __cplusplus
 extern "C"
@@ -413,7 +413,7 @@ extern "C"
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-int32_t __httpsd_open(void** h, int8_t* argv, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
+int32_t __httpsd_open(void** h, int8_t* argv, uint8_t** b, int32_t sz, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
 
 #if defined __cplusplus
 extern "C"
@@ -484,7 +484,7 @@ extern "C"
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-int32_t __ws_open(void** h, int8_t* argv, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
+int32_t __ws_open(void** h, int8_t* argv, uint8_t** b, int32_t sz, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
 
 #if defined __cplusplus
 extern "C"
@@ -547,7 +547,7 @@ extern "C"
 #if defined XWIN32 || defined WINCE
 __declspec(dllexport)
 #endif
-int32_t __serial_open(void** h, int8_t* argv, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
+int32_t __serial_open(void** h, int8_t* argv, uint8_t** b, int32_t sz, int32_t (*f[])(void*,int32_t,int8_t*,int32_t,void*,void*), void* o);
 
 #if defined __cplusplus
 extern "C"
