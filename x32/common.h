@@ -8,7 +8,7 @@
 /*  File Name         : common.h       	                                     */
 /*                                                                           */
 /*  Description       : This file contains all the necessary constants ,     */
-/*                      type definitions according to CAST specifications,	 */
+/*                      type definitions according to CAST specifications,   */
 /*                      common system headers.                               */
 /*                                                                           */
 /*                                                                           */
