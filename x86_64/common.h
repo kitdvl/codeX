@@ -242,8 +242,8 @@ while ( i>=0 ) {               \
 #define   ERR_STR(e)     (e>>24)&0x5F,(e>>16)&0xFF,(e>>8)&0xFF,e&0xFF
 
 
-#define   __STR_TO_HEX(a)   (((a>='0')&&(a<='9'))?(a-'0'):(((a>='A')&&(a<='Z'))?(a-'A'+0x0A):(((a>='a')&&(a<='z'))?(a-'a'+0x0A):0)))
-#define   STR_TO_HEX(a)    ((__STR_TO_HEX(*(a))<<4)|__STR_TO_HEX(*(a+1)))
+#define   __HSTR_TO_HEX(a)   (((a>='0')&&(a<='9'))?(a-'0'):(((a>='A')&&(a<='Z'))?(a-'A'+0x0A):(((a>='a')&&(a<='z'))?(a-'a'+0x0A):0)))
+#define   HSTR_TO_HEX(a)    ((__HSTR_TO_HEX(*(a))<<4)|__HSTR_TO_HEX(*(a+1)))
 
 
 #if defined XWIN32 || defined WINCE
